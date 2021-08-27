@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: tan;
+    font-family: 'Azeret Mono',sans-serif;
 }
 a{
     text-decoration: none;
@@ -36,10 +38,45 @@ gap: 10px;
     padding-top: 20px ;
     text-align: center;
     transition: .4s;
+
 }
 .box:hover{
     box-shadow:0 0 8px 3px #d6d6d6 ;
 }
 .box h3 {
     padding: 20px;
+}
+.search-input{
+    width: 250px;
+    font-size: 13px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px 0 0 8px;
+}
+
+.search-link{
+
+    font-size: 13px;
+    padding: 6px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 0 8px   8px 0 ;
+
+}
+.search-link i {
+    background-color: #F6F6f6;
+}
+
+.mealDetails-right-side p {
+    font-size: 12px;
+}
+.mealDetails-left-side{
+    text-align: center;
+}
+.mealDetails-title{
+    text-align: center;
+}
+.mealDetails-ingredients{
+    display: flex;
 }
