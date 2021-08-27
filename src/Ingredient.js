@@ -11,7 +11,7 @@ const Ingredient = () => {
     useEffect(() => {
         axios(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingParams.ingredient}`)
             .then(({data}) =>setIngredient(data.meals))
-    },[])
+    },[ingParams])
 
     const Back = () => {
         history.goBack()
