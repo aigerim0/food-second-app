@@ -8,8 +8,8 @@ const [searchMeals,setSearchMeals] = useState([])
     useEffect(() => {
         axios(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchMealsParams.name}`)
             .then(({data}) => setSearchMeals(data.meals))
-    },[] )
-    console.log(searchMeals)
+    },[searchMealsParams])
+
    return (
        <div>
 

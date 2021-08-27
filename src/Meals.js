@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
 import {Link} from "react-router-dom";
-import Browse from "./Browse";
+
 
 const Meals = () => {
     const [meals, setMeals] = useState([])
@@ -29,7 +29,7 @@ const handaleInput = (e) => {
 
                         <Link to={`/meal/${item.strMeal}`}>
                             <div key={item.idMeal} className='box'>
-                                <img className='menu' src={item.strMealThumb} width='150'/>
+                                <img className='menu' src={item.strMealThumb} alt='#' width='150'/>
                             <div>
                                 <h3 >{item.strArea}</h3>
                             </div>

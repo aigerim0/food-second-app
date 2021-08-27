@@ -21,7 +21,7 @@ const MealDetails = () => {
                 },[])
                 setIngredient(strIngredient)
             })
-    },[])
+    },[mealDetailsparsms])
 
 
 return (
@@ -29,7 +29,7 @@ return (
 
         {
            <div>
-               <img src={mealDetails.strMealThumb} width='200'/>
+               <img src={mealDetails.strMealThumb} alt='#' width='200'/>
                <h3>{ mealDetails.strMeal}</h3>
                <p>Instructions: {mealDetails.strInstructions}</p>
 
@@ -39,7 +39,7 @@ return (
         {
             ingredient.map(item =>
                 <div>
-<img src={`https://www.themealdb.com/images/ingredients/${item}.png`} width='50'/>
+<img src={`https://www.themealdb.com/images/ingredients/${item}.png`} alt='#' width='50'/>
                     <p>{item}</p>
                 </div>
             )
