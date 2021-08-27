@@ -26,19 +26,23 @@ const [searchMeals,setSearchMeals] = useState([])
     }
    return (
        <div>
-           <button onClick={Back}><i className='bx bx-arrow-back'></i></button>
-           {
-               searchMeals.map( item =>
-                   <Link to={`/meal/${item.strMeal}`}>
-                       <div>
-                           <img src={item.strMealThumb} alt='#' width='200'/>
-                           {item.strMeal}
-                       </div>
-                   </Link>
+           <button className='browse-back' onClick={Back}><i className='bx bx-arrow-back'></i></button>
+        <div className='row'>
+            {
+                searchMeals.map( item =>
+                    <Link to={`/meal/${item.strMeal}`}>
+                        <div className='box'>
+                            <img  className='menu browse-img' src={item.strMealThumb} alt='#' width='150'/>
+                           <div className='browse-title'>
+                               {item.strMeal}
+                           </div>
+                        </div>
+                    </Link>
 
-               )
+                )
 
-           }
+            }
+        </div>
 <div>{error}</div>
        </div>
    )

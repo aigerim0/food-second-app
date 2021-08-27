@@ -35,8 +35,8 @@ const handalSearch  = () => {
 
                         <Link to={`/meal/${item.strMeal}`}>
                             <div key={item.idMeal} className='box'>
-                                <img className='menu' src={item.strMealThumb} alt='#' width='150'/>
-                            <div>
+                                <img className='menu ' src={item.strMealThumb} alt='#' width='150'/>
+                            <div >
                                 <h3 >{item.strArea}</h3>
                             </div>
                             </div>

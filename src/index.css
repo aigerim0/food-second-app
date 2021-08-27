@@ -68,15 +68,79 @@ gap: 10px;
     background-color: #F6F6f6;
 }
 
+/*----------MealDetails-------*/
+
 .mealDetails-right-side p {
     font-size: 12px;
+    margin-top: 10px;
 }
 .mealDetails-left-side{
     text-align: center;
 }
 .mealDetails-title{
     text-align: center;
+    margin-bottom: 20px ;
 }
 .mealDetails-ingredients{
     display: flex;
+}
+.mealDetails-img{
+    border-radius: 18px;
+    margin-bottom: 10px;
+}
+.ingredient-title{
+    font-size: 14px;
+    margin: 10px;
+}
+.youtube-instructions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.mealDetails-right-side{
+    margin-left: 10px;
+}
+.mealDetails-right-side h3{
+   text-align: center;
+    font-size: 25px;
+}
+.back{
+    position: fixed;
+    font-size: 25px;
+    border: none;
+    margin: 20px 0 0 20px;
+    background: none;
+}
+
+/*----------Browse-------*/
+.browse-title {
+    padding: 10px;
+    text-align: center;
+    margin-top:10px;
+}
+.browse-img{
+    margin-bottom: 10px;
+}
+.browse-back{
+
+    font-size: 25px;
+    border: none;
+margin-top: 10px;
+    background: none;
+}
+
+/*----------Ingredient-------*/
+.box h4 {
+    padding: 20px;
+}
+.ingBigImg{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.ing-back{
+    font-size: 25px;
+    border: none;
+    margin: 20px 0 0 20px;
+    background: none;
 }

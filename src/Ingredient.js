@@ -19,20 +19,24 @@ const Ingredient = () => {
 
     return (
         <div>
-            <button onClick={Back}><i className='bx bx-arrow-back'></i></button>
-<div>
-    <img src={`https://www.themealdb.com/images/ingredients/${ingParams.ingredient}.png`} alt='#' width='50'/>
+            <button className='ing-back' onClick={Back}><i className='bx bx-arrow-back'></i></button>
+<div className='ingBigImg'>
+    <img  src={`https://www.themealdb.com/images/ingredients/${ingParams.ingredient}.png`} alt='#' width='200'/>
 </div>
-            {
-                ingredient.map(el =>
-                <Link to={`/meal/${el.strMeal}`}>
-                    <img src={el.strMealThumb} alt='#' width='200'/>
-                 <h3>
-                     {el.strMeal}
-                 </h3>
-                </Link>
-                )
-            }
+           <div className='row'>
+               {
+                   ingredient.map(el =>
+                       <Link to={`/meal/${el.strMeal}`}>
+                          <div className='box'>
+                              <img src={el.strMealThumb} alt='#' width='150'/>
+                              <h4>
+                                  {el.strMeal}
+                              </h4>
+                          </div>
+                       </Link>
+                   )
+               }
+           </div>
         </div>
     )
 }
