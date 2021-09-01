@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import {useHistory, useParams} from "react-router-dom";
 import {Link} from "react-router-dom";
+import MealsList from "../MealsList/MealsList";
 
 const Browse  = () =>{
 const [searchMeals,setSearchMeals] = useState([])
@@ -43,6 +44,9 @@ const [searchMeals,setSearchMeals] = useState([])
 
             }
         </div>
+
+
+
 <div>{error}</div>
        </div>
    )

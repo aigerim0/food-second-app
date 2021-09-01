@@ -1,5 +1,5 @@
 import {BrowserRouter,Route } from 'react-router-dom'
-import Meals from "./Meals";
+import Meals from "./views/MealsList/Meals";
 import MealDetails from "./MealDetails";
 import Browse from "./views/BrowseList/Browse";
 import Ingredient from "./Ingredient";

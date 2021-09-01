@@ -1,0 +1,38 @@
+@media (max-width: 1200px) {
+    /* 993 - 1200 */
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* 769 - 992 */
+    .container {
+        max-width: 750px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    /* 481 - 768 */
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* 320 - 480 */
+    .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+
+    }
+    .youtube-instructions {
+    flex-direction: column;
+    }
+    .mealDetails-right-side{
+        margin-top: 10px;
+    }
+}

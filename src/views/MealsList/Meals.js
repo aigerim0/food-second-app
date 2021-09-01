@@ -1,7 +1,8 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
 import {Link,useHistory} from "react-router-dom";
-import BrowseList from "./views/BrowseList/BrowseList";
+import MealsList from "./MealsList";
+
 
 
 const Meals = () => {
@@ -30,22 +31,8 @@ const handalSearch  = () => {
                 <button onClick={handalSearch} className='search-link'><i className='bx bx-search-alt-2'></i></button>
 
             </div>
-            <div className='row'>
-                {
-                    meals.map(item =>
 
-                        <Link to={`/meal/${item.strMeal}`}>
-                            <div key={item.idMeal} className='box'>
-                                <img className='menu ' src={item.strMealThumb} alt='#' width='150'/>
-                                <div >
-                                    <h3 >{item.strArea}</h3>
-                                </div>
-                            </div>
-                        </Link>
-                    )
-                }
-            </div>
- {/*<BrowseList meals = {meals}/>*/}
+<MealsList  meals={meals}/>
         </div>
     )
 }
