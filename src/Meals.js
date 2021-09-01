@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
 import {Link,useHistory} from "react-router-dom";
+import BrowseList from "./views/BrowseList/BrowseList";
 
 
 const Meals = () => {
@@ -36,14 +37,15 @@ const handalSearch  = () => {
                         <Link to={`/meal/${item.strMeal}`}>
                             <div key={item.idMeal} className='box'>
                                 <img className='menu ' src={item.strMealThumb} alt='#' width='150'/>
-                            <div >
-                                <h3 >{item.strArea}</h3>
-                            </div>
+                                <div >
+                                    <h3 >{item.strArea}</h3>
+                                </div>
                             </div>
                         </Link>
                     )
                 }
             </div>
+ {/*<BrowseList meals = {meals}/>*/}
         </div>
     )
 }

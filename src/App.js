@@ -1,7 +1,7 @@
 import {BrowserRouter,Route } from 'react-router-dom'
 import Meals from "./Meals";
 import MealDetails from "./MealDetails";
-import Browse from "./Browse";
+import Browse from "./views/BrowseList/Browse";
 import Ingredient from "./Ingredient";
 function App() {
   return (
